@@ -52,15 +52,15 @@
             </a>
             <nav id="main-nav">
                 
-                    <a class="main-nav-link" href="/.">Home</a>
+                    <a class="main-nav-link" href="/.">首页</a>
                 
-                    <a class="main-nav-link" href="/archives">Archives</a>
+                    <a class="main-nav-link" href="/archives">归档</a>
                 
-                    <a class="main-nav-link" href="/categories">Categories</a>
+                    <a class="main-nav-link" href="/categories">分类</a>
                 
-                    <a class="main-nav-link" href="/tags">Tags</a>
+                    <a class="main-nav-link" href="/tags">标签</a>
                 
-                    <a class="main-nav-link" href="/About">About</a>
+                    <a class="main-nav-link" href="/about">关于</a>
                 
             </nav>
             
@@ -77,35 +77,38 @@
             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
         <button type="submit" class="search-form-submit"></button>
     </form>
-    <script type="text/javascript">
-(function(w,d,t,u,n,s,e) {w['SwiftypeObject']=n;w[n]=w[n]||function() {
-(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-_st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
 </script>
-<style>
-    .st-ui-injected-overlay-container,
-    .st-ui-injected-overlay-container *:not(select) {
-        font-family: inherit !important;
-    }
-    section.st-ui-content.st-search-results a.st-ui-result .st-ui-type-heading {
-        color:  !important;
-    }
-    .st-ui-injected-overlay-container .st-ui-header input[type="text"]:focus {
-        border-bottom: 2px solid ;
-    }
-    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link {
-        color: ;
-    }
-    .st-ui-injected-overlay-container .st-ui-footer a.st-ui-pagination-link span.st-ui-arrow {
-        border-color: ;
-    }
-</style>
+<script src="/js/insight.js"></script>
 
 </div>
         </div>
@@ -114,20 +117,20 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
         <table class="menu outer">
             <tr>
                 
-                    <td><a class="main-nav-link" href="/.">Home</a></td>
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
                 
-                    <td><a class="main-nav-link" href="/archives">Archives</a></td>
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
                 
-                    <td><a class="main-nav-link" href="/categories">Categories</a></td>
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
                 
-                    <td><a class="main-nav-link" href="/tags">Tags</a></td>
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
                 
-                    <td><a class="main-nav-link" href="/About">About</a></td>
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
                 
                 <td>
                     
     <div class="search-form">
-        <input type="text" class="st-default-search-input search-form-input" placeholder="搜索" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
     </div>
 
                 </td>
@@ -147,7 +150,7 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
             <h2 id="name">爱玩平台支撑中心</h2>
             <h3 id="title">Web Developer &amp; Designer</h3>
             <span id="location"><i class="fa fa-map-marker"></i>Shenzen, China</span>
-            <a id="follow" target="_blank" href="https://github.com/ppoffice/">关注我</a>
+            <a id="follow" target="_blank" href="https://github.com/iwanFE">关注我</a>
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
@@ -166,7 +169,7 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
                     
                     
                     <td>
-                        <a href="http://github.com/ppoffice/hexo-theme-icarus" target="_blank" title="github" class=tooltip>
+                        <a href="https://github.com/iwanFE" target="_blank" title="github" class=tooltip>
                             <i class="fa fa-github"></i>
                         </a>
                     </td>
@@ -244,74 +247,43 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
             <div class="share-container">
 
 
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
 
 </div>
-
-    <a data-url="https://iwanfe.github.io/2018/05/18/test-2/" data-id="cjhbditi00001o4px09aodr4l" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
 
             
     
@@ -320,14 +292,6 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
     </div>
     
 </article>
-
-
-    
-    
-        <section id="comments">
-	<div id="commentContainer"></div>
-</section>
-    
 
 
 
@@ -380,74 +344,43 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
             <div class="share-container">
 
 
+    <div class="bdsharebuttonbox">
+    <a href="#" class="bds_more" data-cmd="more">分享到：</a>
+    <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间">QQ空间</a>
+    <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博">新浪微博</a>
+    <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博">腾讯微博</a>
+    <a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网">人人网</a>
+    <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信">微信</a>
+</div>
+<script>
+window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{"bdSize":16}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+<style>
+    .bdshare_popup_box {
+        border-radius: 4px;
+        border: #e1e1e1 solid 1px;
+    }
+    .bdshare-button-style0-16 a,
+    .bdshare-button-style0-16 .bds_more {
+        padding-left: 20px;
+        margin: 6px 10px 6px 0;
+    }
+    .bdshare_dialog_list a,
+    .bdshare_popup_list a,
+    .bdshare_popup_bottom a {
+        font-family: 'Microsoft Yahei';
+    }
+    .bdshare_popup_top {
+        display: none;
+    }
+    .bdshare_popup_bottom {
+        height: auto;
+        padding: 5px;
+    }
+</style>
+
 
 </div>
-
-    <a data-url="https://iwanfe.github.io/2018/05/15/hello-world/" data-id="cjhbdithu0000o4px2g0qylwf" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
-<script>
-    (function ($) {
-        // Prevent duplicate binding
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-</script>
 
             
     
@@ -456,14 +389,6 @@ _st('install','gy8J3Z5JMBELaGNcR9hi','2.0.0');
     </div>
     
 </article>
-
-
-    
-    
-        <section id="comments">
-	<div id="commentContainer"></div>
-</section>
-    
 
 
 </section>
