@@ -134,14 +134,22 @@
 <div class="comments">
     <h3 class="title is-4">Comments</h3>
     
-<div id="disqus_thread">
-    
-    <div class="notification is-danger">
-        You forgot to set the <code>shortname</code> for Disqus. Please set it in <code>_config.yml</code>.
-    </div>
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+<script>
+	var gitment = new Gitment({
+		id: '2018/05/15/hello-world/',
+		owner: '39373563',
+		repo: 'https://github.com/iwanFE/gitment-comments.git',
+		oauth: {
+			client_id: '693ae39206fe9cad758b',
+			client_secret: 'd875cb21a972ea5d3ec5737d95a0e54b4ce4bf4b',
+		},
+	})
+	gitment.render('comment-container')
+</script>
+
 </div>
 
     </div>
